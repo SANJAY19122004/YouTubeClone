@@ -1,0 +1,80 @@
+/* ===== Video Card ===== */
+.video-card {
+  text-decoration: none;
+  color: white;
+  display: block;
+  cursor: pointer;
+}
+
+.video-card:hover .thumbnail {
+  border-radius: 0;
+}
+
+/* ===== Thumbnail ===== */
+.thumbnail-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #272727;
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: border-radius 0.2s;
+}
+
+/* ===== Video Info ===== */
+.video-info {
+  display: flex;
+  gap: 12px;
+  padding: 0 4px;
+}
+
+/* Channel Avatar Circle */
+.channel-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #3ea6ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.video-details {
+  flex: 1;
+}
+
+/* Video Title */
+.video-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Channel Name */
+.channel-name {
+  font-size: 0.82rem;
+  color: #aaaaaa;
+  margin-bottom: 2px;
+}
+
+/* Views and Date */
+.video-meta {
+  font-size: 0.82rem;
+  color: #aaaaaa;
+}

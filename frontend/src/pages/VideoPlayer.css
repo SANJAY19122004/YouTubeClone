@@ -1,0 +1,330 @@
+/* ===== Video Player Page ===== */
+.vp-page {
+  background: #0f0f0f;
+  min-height: 100vh;
+}
+
+.vp-content {
+  padding-top: 76px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.vp-loading,
+.vp-error {
+  text-align: center;
+  padding: 100px 20px;
+  color: #aaaaaa;
+  font-size: 1rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: #3ea6ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== Video Player ===== */
+.video-player-wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: black;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+/* ===== Video Title ===== */
+.vp-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* ===== Meta Section ===== */
+.vp-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #272727;
+  margin-bottom: 16px;
+}
+
+.vp-channel-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vp-channel-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3ea6ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.vp-channel-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+}
+
+.vp-views {
+  font-size: 0.82rem;
+  color: #aaaaaa;
+}
+
+/* ===== Action Buttons ===== */
+.vp-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #272727;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action-btn:hover {
+  background: #3f3f3f;
+}
+
+.action-btn.active {
+  background: #3ea6ff;
+  color: white;
+}
+
+/* ===== Description ===== */
+.vp-description {
+  background: #272727;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ===== Comments Section ===== */
+.comments-section {
+  padding-bottom: 40px;
+}
+
+.comments-section h2 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* ===== Add Comment ===== */
+.add-comment {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.comment-input-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comment-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #272727;
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.comment-input:focus {
+  border-bottom-color: white;
+}
+
+.comment-submit-btn {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background: #3ea6ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.comment-submit-btn:hover {
+  background: #1c62b9;
+}
+
+.comment-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.signin-to-comment {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.signin-to-comment a {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
+/* ===== Comments List ===== */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+}
+
+.comment-body {
+  flex: 1;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.comment-username {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+}
+
+.comment-time {
+  font-size: 0.78rem;
+  color: #aaaaaa;
+}
+
+.comment-text {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* ===== Comment Actions ===== */
+.comment-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.comment-action-btn {
+  background: none;
+  border: none;
+  color: #aaaaaa;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.comment-action-btn:hover {
+  color: white;
+}
+
+.comment-action-btn.delete:hover {
+  color: #ff4444;
+}
+
+/* ===== Edit Comment ===== */
+.edit-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background: #272727;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #3f3f3f;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .vp-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .vp-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vp-title {
+    font-size: 1.1rem;
+  }
+}

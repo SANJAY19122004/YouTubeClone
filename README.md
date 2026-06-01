@@ -126,4 +126,3 @@ bash
 
 4. Open `http://localhost:5173` in your browser
 
-## Test Login Credentials

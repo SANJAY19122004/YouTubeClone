@@ -34,6 +34,7 @@
   font-size: 1.5rem;
   color: #aaaaaa;
   margin-bottom: 12px;
+    text-shadow: 4px 4px 0px #272727;
 }
 
 .notfound-url {

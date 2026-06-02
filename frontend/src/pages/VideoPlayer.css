@@ -317,6 +317,7 @@
   .vp-content {
     padding-left: 12px;
     padding-right: 12px;
+    padding-top: 70px;
   }
 
   .vp-meta {
@@ -326,5 +327,10 @@
 
   .vp-title {
     font-size: 1.1rem;
+  }
+
+  .vp-actions {
+    width: 100%;
+    justify-content: flex-start;
   }
 }

@@ -359,6 +359,7 @@
 @media (max-width: 768px) {
   .channel-info {
     padding: 16px;
+    flex-direction: column;
   }
 
   .channel-videos-section {
@@ -371,5 +372,10 @@
 
   .channel-name {
     font-size: 1.3rem;
+  }
+
+    .upload-btn {
+    width: 100%;
+    text-align: center;
   }
 }

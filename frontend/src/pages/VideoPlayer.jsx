@@ -242,7 +242,9 @@ const VideoPlayer = () => {
 
           {/* Comments Section */}
           <div className="comments-section">
-            <h2>{comments.length} Comments</h2>
+            <h2>
+              {comments.length} {comments.length === 1 ? "Comment" : "Comments"}
+            </h2>
 
             {/* Add Comment Input */}
             {user ? (

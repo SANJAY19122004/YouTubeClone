@@ -1,3 +1,8 @@
+# git hub repo link :
+
+https://github.com/SANJAY19122004/YouTubeClone
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

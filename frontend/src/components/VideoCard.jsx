@@ -4,15 +4,15 @@ import "./VideoCard.css";
 // VideoCard component - displays a single video thumbnail card
 const VideoCard = ({ video }) => {
   // Format view count to show K or M
-  const formatViews = (views) => {
-    if (views >= 1000000) {
-      return `${(views / 1000000).toFixed(1)}M views`;
-    } else if (views >= 1000) {
-      return `${(views / 1000).toFixed(1)}K views`;
-    }
-    return `${views} views`;
-  };
-
+ const formatViews = (views) => {
+  if (!views) return "0 views";
+  if (views >= 1000000) {
+    return `${(views / 1000000).toFixed(1)}M views`;
+  } else if (views >= 1000) {
+    return `${(views / 1000).toFixed(1)}K views`;
+  }
+  return `${views} views`;
+};
   // Format date to show how long ago
   const formatDate = (date) => {
     const now = new Date();

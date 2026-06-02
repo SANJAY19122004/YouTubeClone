@@ -33,6 +33,11 @@
   flex-wrap: wrap;
   overflow-x: auto;
   padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .filter-btn {

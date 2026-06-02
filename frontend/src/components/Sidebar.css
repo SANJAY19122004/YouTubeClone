@@ -82,3 +82,8 @@
     overflow: hidden;
   }
 }
+
+.sidebar-link.active {
+  background: #272727;
+  color: #3ea6ff;
+}

@@ -1,3 +1,4 @@
+// Main server file - sets up Express app with MongoDB connection
 // Import required modules using ES Modules syntax
 import express from "express";
 import mongoose from "mongoose";
@@ -28,7 +29,7 @@ app.use((req, res, next) => {
   res.on("finish", () => {
     const duration = Date.now() - start;
     console.log(
-      `[${new Date().toISOString()}] ${req.method} ${req.url} ${res.statusCode} - ${duration}ms`
+      `[${new Date().toISOString()}] ${req.method} ${req.url} ${res.statusCode} - ${duration}ms`,
     );
   });
   next();

@@ -1,3 +1,4 @@
+// Main App component - sets up routing for all pages
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 

@@ -78,6 +78,17 @@ const seedDatabase = async () => {
         views: 15200,
       },
       {
+        title: "React Hooks Complete Guide",
+        description:
+          "Master useState useEffect useContext and custom hooks in React.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/reacthooks/480/270",
+        channelId: channel1._id,
+        uploader: user1._id,
+        category: "React",
+        views: 19800,
+      },
+      {
         title: "JavaScript ES6 Features Explained",
         description:
           "Learn all the modern JavaScript ES6 features with examples.",
@@ -87,6 +98,17 @@ const seedDatabase = async () => {
         uploader: user1._id,
         category: "JavaScript",
         views: 22400,
+      },
+      {
+        title: "JavaScript Promises and Async Await",
+        description:
+          "Understand asynchronous JavaScript with promises and async await.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/jsasync/480/270",
+        channelId: channel1._id,
+        uploader: user1._id,
+        category: "JavaScript",
+        views: 17600,
       },
       {
         title: "Node.js Crash Course for Beginners",
@@ -100,6 +122,17 @@ const seedDatabase = async () => {
         views: 18900,
       },
       {
+        title: "Node.js with Express REST API",
+        description:
+          "Build a complete REST API with Node.js Express and MongoDB.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/nodeexpress/480/270",
+        channelId: channel1._id,
+        uploader: user1._id,
+        category: "Node.js",
+        views: 24100,
+      },
+      {
         title: "Python for Data Science",
         description: "Get started with Python programming for data analysis.",
         videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
@@ -108,6 +141,16 @@ const seedDatabase = async () => {
         uploader: user2._id,
         category: "Python",
         views: 31000,
+      },
+      {
+        title: "Python Django Web Framework",
+        description: "Build web applications with Python Django framework.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/django/480/270",
+        channelId: channel2._id,
+        uploader: user2._id,
+        category: "Python",
+        views: 27500,
       },
       {
         title: "Web Development Full Course 2024",
@@ -121,6 +164,16 @@ const seedDatabase = async () => {
         views: 45000,
       },
       {
+        title: "CSS Flexbox and Grid Complete Guide",
+        description: "Master CSS layout with Flexbox and Grid from scratch.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/css/480/270",
+        channelId: channel2._id,
+        uploader: user2._id,
+        category: "Web Development",
+        views: 33000,
+      },
+      {
         title: "Data Science Roadmap 2024",
         description: "Complete roadmap to becoming a data scientist in 2024.",
         videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
@@ -129,6 +182,17 @@ const seedDatabase = async () => {
         uploader: user2._id,
         category: "Data Science",
         views: 28000,
+      },
+      {
+        title: "Machine Learning with Python",
+        description:
+          "Build your first machine learning model with Python and scikit-learn.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/ml/480/270",
+        channelId: channel2._id,
+        uploader: user2._id,
+        category: "Data Science",
+        views: 41000,
       },
       {
         title: "Top 10 Gaming Moments of 2024",
@@ -141,6 +205,17 @@ const seedDatabase = async () => {
         views: 67000,
       },
       {
+        title: "Best Gaming Setup Tour 2024",
+        description:
+          "Tour of the ultimate gaming setup with RGB and dual monitors.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/gamingsetup/480/270",
+        channelId: channel1._id,
+        uploader: user1._id,
+        category: "Gaming",
+        views: 52000,
+      },
+      {
         title: "Relaxing Music for Coding",
         description: "Lo-fi music playlist to help you focus while coding.",
         videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
@@ -150,8 +225,37 @@ const seedDatabase = async () => {
         category: "Music",
         views: 89000,
       },
+      {
+        title: "Top Music Hits of 2024",
+        description: "Collection of the most popular music hits from 2024.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/musichits/480/270",
+        channelId: channel2._id,
+        uploader: user2._id,
+        category: "Music",
+        views: 120000,
+      },
+      {
+        title: "Tech News Weekly Roundup",
+        description: "Latest technology news and updates from this week.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/news/480/270",
+        channelId: channel1._id,
+        uploader: user1._id,
+        category: "News",
+        views: 14000,
+      },
+      {
+        title: "AI News - Latest Developments",
+        description: "Biggest AI developments and news from the tech world.",
+        videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        thumbnailUrl: "https://picsum.photos/seed/ainews/480/270",
+        channelId: channel1._id,
+        uploader: user1._id,
+        category: "News",
+        views: 21000,
+      },
     ];
-
     // Insert all videos
     const createdVideos = await Video.insertMany(videos);
     console.log("Videos created");

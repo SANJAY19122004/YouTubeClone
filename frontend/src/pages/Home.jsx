@@ -93,15 +93,24 @@ const Home = () => {
         >
           {/* Category Filter Buttons */}
           <div className="filter-bar">
-            {CATEGORIES.map((cat) => (
-              <button
-                key={cat}
-                className={`filter-btn ${activeCategory === cat ? "active" : ""}`}
-                onClick={() => handleCategoryClick(cat)}
-              >
-                {cat}
-              </button>
-            ))}
+            {CATEGORIES.map((cat) => {
+              // Count videos in each category
+              const count =
+                cat === "All"
+                  ? videos.length
+                  : videos.filter((v) => v.category === cat).length;
+
+              return (
+                <button
+                  key={cat}
+                  className={`filter-btn ${activeCategory === cat ? "active" : ""}`}
+                  onClick={() => handleCategoryClick(cat)}
+                >
+                  {cat}
+                  {count > 0 && <span className="filter-count">{count}</span>}
+                </button>
+              );
+            })}
           </div>
 
           {/* Loading state */}

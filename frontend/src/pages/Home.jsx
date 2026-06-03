@@ -122,7 +122,27 @@ const Home = () => {
           {/* No results */}
           {!loading && !error && videos.length === 0 && (
             <div className="no-results">
-              No videos found for "{searchQuery || activeCategory}"
+              <p>🔍 No videos found</p>
+              {searchQuery && (
+                <p>
+                  No results for "<strong>{searchQuery}</strong>"
+                </p>
+              )}
+              {activeCategory !== "All" && !searchQuery && (
+                <p>
+                  No videos in <strong>{activeCategory}</strong> category yet
+                </p>
+              )}
+              <button
+                className="filter-btn"
+                style={{ marginTop: "16px" }}
+                onClick={() => {
+                  setSearchQuery("");
+                  setActiveCategory("All");
+                }}
+              >
+                Clear filters
+              </button>
             </div>
           )}
 

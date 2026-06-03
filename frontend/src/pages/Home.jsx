@@ -44,24 +44,24 @@ const Home = () => {
   }, [location.search]);
 
   // Fetch videos from backend API
-  const fetchVideos = async () => {
-    try {
-      setLoading(true);
-      setError(null);
+ const fetchVideos = async () => {
+   try {
+     setLoading(true);
+     setError(null);
 
-      // Build query params
-      let query = "";
-      if (activeCategory !== "All") query += `category=${activeCategory}&`;
-      if (searchQuery) query += `search=${searchQuery}`;
+     // Build query params for search and category
+     const params = new URLSearchParams();
+     if (activeCategory !== "All") params.append("category", activeCategory);
+     if (searchQuery.trim()) params.append("search", searchQuery.trim());
 
-      const res = await axios.get(`${API_URL}/videos?${query}`);
-      setVideos(res.data.videos);
-    } catch (err) {
-      setError("Failed to load videos. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+     const res = await axios.get(`${API_URL}/videos?${params.toString()}`);
+     setVideos(res.data.videos);
+   } catch (err) {
+     setError("Failed to load videos. Please try again.");
+   } finally {
+     setLoading(false);
+   }
+ };
 
   // Handle search from header
   const handleSearch = (query) => {
